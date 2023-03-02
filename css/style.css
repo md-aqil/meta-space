@@ -417,3 +417,38 @@ padding: 40px;
       line-height: 1.5;
       margin-top: 25px;
   }
+  .big-pipe {
+    position: absolute;
+    left: 0;
+    top: -100px;
+  }
+  .c3 {
+    position: absolute;
+    /* left: 0; */
+    top: -80px;
+    right: -60px;
+    z-index: 1;
+    width: 150px;
+  }
+  .c1 {
+    position: absolute;
+    left: 134px;
+    top: 0;
+    z-index: 1;
+    width: 170px;
+  }
+  .features-full {
+    display: none;
+  }
+  .fmore {
+      /* margin-top: -75px; */
+  }
+  .more-active {
+      margin-top: 0 !important;
+  }
+  .more-active .vMore{
+    display: none;
+  }
+  .f-section .col-md-3 {
+      margin-top: 30px;
+  }
