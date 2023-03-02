@@ -115,6 +115,10 @@ margin-bottom: 50px;
     background:#26283D;
     border-color: var(--green);
     color: #fff;
+   
+}
+.fco .card-f {
+    height: 90%;
 }
 .card-f .card-text {
     font-size: 14px;
