@@ -12,8 +12,12 @@ body {
     height: 80vh;
     position: relative;
 }
-
-
+.f-section {
+    margin-top: -150px;
+}
+.asfo {
+    /* position: relative; */
+}
 .hero-overlay {
     width: 100%;
     height: 100%;
@@ -86,7 +90,6 @@ border-radius: 8px;
     background-position-x: center;
     background-position-y: 0px;
     background-color: #ff000000;
-    position: absolute;
     left: 0;
     /* top: 270px; */
     bottom: -300px;
@@ -123,28 +126,13 @@ margin-bottom: 50px;
     padding-bottom: 70px;
 }
 .card-f > img {
-    width: 70px;
-        margin-top: -30px;
-        margin-left: 15px;
+    width: 115px;
+    margin-top: -56px;
 }
-.f-section {
-    position: relative;
-    margin-top: 350px;
+.f-section .card-title {
+    margin-top: -15px;
 }
-.f-section:before {
-    content: "";
-        background: linear-gradient(18deg, #6BFF4C 8.43%, #39FED5 42.36%, #51C2FF 60.4%, #B935F8 85.88%);
-        opacity: 0.2;
-        filter: blur(100px);
-        width: 80%;
-        position: absolute;
-        left: 0;
-        top: 80px;
-        height: 350px;
-        left: 0;
-        right: 0;
-        margin: auto;
-}
+
 .glass {
     background: rgba(2, 2, 2, 0.1);
 box-shadow: inset 43.6px -43.6px 43.6px rgba(2, 2, 2, 0.1), inset -43.6px 43.6px 43.6px rgba(255, 255, 255, 0.1);
@@ -276,7 +264,7 @@ padding: 40px;
   .list li {
     color: #dbdbdb;
         font-weight: 300;
-        padding: 12px 0;
+        padding: 10px 0;
   }
   .token-list {
       list-style: none;
@@ -452,9 +440,22 @@ padding: 40px;
   .f-section .col-md-3 {
       margin-top: 30px;
   }
-  .fco {
-    padding-top: 80px;
+
+.f-section:before {
+    content: "";
+        background: linear-gradient(18deg, #6BFF4C 8.43%, #39FED5 42.36%, #51C2FF 60.4%, #B935F8 85.88%);
+        opacity: 0.2;
+        filter: blur(100px);
+        width: 80%;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        height: 350px;
+        left: 0;
+        right: 0;
+        margin: auto;
 }
+
 
   /* mobile css START herer =====================================*/
 @media (max-width: 767px) {
@@ -489,7 +490,6 @@ padding: 40px;
     background-position-x: center;
     background-position-y: 80px;
     background-color: #ff000000;
-    position: absolute;
     left: 0;
     /* top: 270px; */
     bottom: -171px;
@@ -497,11 +497,10 @@ padding: 40px;
     background-repeat: no-repeat;
     /* padding-top: 50px; */
     background-size: 120%;
-}
-.f-section {
     position: relative;
-    margin-top: 160px;
 }
+
+
 
 .fco {
     padding-top: 0px;
