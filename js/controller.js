@@ -49,11 +49,11 @@ var swiper = new Swiper('.swiper-loop', {
 		 },
 
 		1400: {
-			slidesPerView: 3,
+			slidesPerView: 4,
 			spaceBetween: 50,
 		 },
 		 1200: {
-			slidesPerView: 3,
+			slidesPerView: 4,
 			spaceBetween: 20,
 		 },
 		 900: {
