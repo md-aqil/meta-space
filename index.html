@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MetaSpacer</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/swiper.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
       <div class="hero-overlay">
         
         <header class="header-theme">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed">
                 <div class="container">
                     <a class="navbar-brand" href="./index.html">
                         <img style="width: 205px;" src="./img/mt1.png" alt="">
@@ -28,16 +29,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                           <li class="nav-item active">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link page" href="#about">About</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#roadmap">Roadmap</a>
+                            <a class="nav-link page" href="#roadmap">Roadmap</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#faq">FAQ</a>
+                            <a class="nav-link page" href="#faq">FAQ</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#tokenomics">Tokenomics</a>
+                            <a class="nav-link page" href="#tokenomics">Tokenomics</a>
                           </li>
                           
                         </ul>
@@ -61,10 +62,39 @@
       </div>
       <img class="hero-bg" src="./img/ezgif-2-75b8244db1.gif" alt="">
     </section>
-<section class="por">
-    <!-- <img src="./img/fade.png" class="fade" alt=""> -->
+<section class="por" style="margin-top: -130px; z-index: 1;">
+    <img src="./img/fade.png"  style="position: absolute;
+    width: 100%;
+    margin: auto;
+    top: -140px;" alt="">
     <section class="asfo">
-        <h2 class="title text-gradient">As Featured on</h2>
+        <h2 class="title text-gradient" style="position: relative;
+        z-index: 1;">As Featured on</h2>
+        <section class="">
+            <div class="swiper-container swiper-loop" dir="ltr">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/Benzinga logo.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/bloomberg logo.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Marketwatch logo.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/nasdaq.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Yahoo! logo.png" alt="">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+          
+        </section>
+
     </section>
 </section>
   
@@ -172,7 +202,7 @@ MetaSpace takes privacy and security very seriously, and our platform is designe
             </div>
         </section>
         <p class="text-center mb-0">
-            <button class="btn btn-primary btn-theme vMore">GET STARTED</button>
+            <button class="btn btn-primary btn-theme vMore">View More</button>
         </p>
         </div>
     </section>
@@ -183,7 +213,7 @@ MetaSpace takes privacy and security very seriously, and our platform is designe
                         <img src="./img/boy.png" class="img-responsive boy" alt="">
                     </div>
                 <div class="col-md-8" style="position: relative; z-index: 2;">
-                    <img class="c3" src="./img/chat 3.png" alt="">
+                    <img class="c3 rellax" src="./img/chat 3.png" alt="">
                     <div class="card card-f mb-4 shadow-sm g-box">
                       <div class="card-body">
                             <h2 class="title text-gradient text-left mb-3">About Us</h2>
@@ -244,11 +274,7 @@ The MetaSpace dating space is a large-scale immersive environment that provides 
     </div>
 </section>
 <section class="roadmap-section spacer por" id="roadmap">
-    <img src="./img/b-circle.png" class="b-circle "   style="position: absolute;
-    top: 16px;
-    width: 269px;
-    z-index: 10;
-    left: -50px;" alt="">
+    <img src="./img/b-circle.png" class="b-circle rellax" data-rellax-speed="-2" alt="">
     <div class="container">
         <div class="title-box mb-5">
             <h2 class="title text-gradient mb-3">Roadmap</h2>
@@ -260,10 +286,10 @@ The MetaSpace dating space is a large-scale immersive environment that provides 
 
         <div class="row">
         <div class="col-md-12" style="position: relative; z-index: 2;">
-            <img src="./img/csmall.png" style="position: absolute;
+            <img src="./img/csmall.png" class="rellax" style="position: absolute;
             right: -148px;
-            top: -104px;
-            width: 270px;" alt="">
+            top: 120%;
+            width: 270px;" data-rellax-speed="3" alt="">
            
             <div class="gv">
                 <div class="card-map">
@@ -490,7 +516,7 @@ The MetaSpace dating space is a large-scale immersive environment that provides 
 </section>
 
 <section class="team-section spacer por">
-    <img class="c1" src="./img/chat 1.png" alt="">
+    <img class="c1 rellax" data-rellax-speed="2"  src="./img/chat 1.png" alt="">
     <h2 class="title text-gradient">Team Members</h2>
         <div class="container">
             <div class="row">
@@ -577,35 +603,9 @@ The MetaSpace dating space is a large-scale immersive environment that provides 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper-base.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-
-
+  <script src="./js/swiper.js"></script>
+  <script src="./js/controller.js"></script>
   <script>
-    $('.faq-heading').click(function () {
-    $(this).parent('li').toggleClass('the-active').find('.faq-text').slideToggle();
-    });
-
-$('.vMore').click(function () {
-  $('.features-full').slideToggle();
-});
-
-var rellax = new Rellax('.rellax', {
-    speed: -2,
-    center: false,
-    wrapper: null,
-    round: true,
-    vertical: true,
-    horizontal: false
-  });
-
-  function copy(){
-  console.time('time1');
-	var temp = $("<input>");
-  $("body").append(temp);
- temp.val($('#copyText1').text()).select();
-  document.execCommand("copy");
-  temp.remove();
-    console.timeEnd('time1');
-}
 
   </script>
 </body>
