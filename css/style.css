@@ -88,7 +88,7 @@ border-radius: 8px;
 .asfo {
     background: url(../img/asfo.png);
     width: 100%;
-    height: 500px;
+    height: 340px;
     background-position-x: center;
     background-position-y: 50px;
     background-color: #ff000000;
@@ -98,6 +98,7 @@ border-radius: 8px;
     z-index: 1;
     background-repeat: no-repeat;
     padding-top: 50px;
+    background-size: cover;
   
 }
 .swiper-loop .swiper-slide img {
@@ -555,7 +556,7 @@ padding: 40px;
 .asfo {
     background: url(../img/asfo.png);
     width: 100%;
-    height: 333px;
+   height: 340px;
     background-position-x: center;
     background-position-y: 80px;
     background-color: #ff000000;
