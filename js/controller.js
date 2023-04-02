@@ -20,15 +20,6 @@ var rellax = new Rellax('.rellax', {
     horizontal: false
   });
 
-  function copy(){
-  console.time('time1');
-	var temp = $("<input>");
-  $("body").append(temp);
- temp.val($('#copyText1').text()).select();
-  document.execCommand("copy");
-  temp.remove();
-    console.timeEnd('time1');
-}
 
 
 var swiper = new Swiper('.swiper-loop', {

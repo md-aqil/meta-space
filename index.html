@@ -65,7 +65,7 @@
       </div>
       <img class="hero-bg" src="./img/ezgif-2-75b8244db1.gif" alt="">
     </section>
-<section class="por fade-c"  style="margin-top: -30px; z-index: 1;">
+<section class="por fade-c"  style="z-index: 1;">
     <img src="./img/fade.png" class="fade"  style="position: absolute;
     width: 100%;
     margin: auto;
@@ -73,6 +73,7 @@
     <section class="asfo">
         <h2 class="title text-gradient" style="position: relative;
         z-index: 1;">As Featured on</h2>
+        <img src="./img/asfo.png" class="asfo-img" alt="">
         <section class="">
             <div class="swiper-container swiper-loop" dir="ltr">
                 <div class="swiper-wrapper">
@@ -493,10 +494,13 @@ The MetaSpace dating space is a large-scale immersive environment that provides 
                     <li>5% for community and ecosystem development .</li>
                 </ul>
                 <h2 class="heading text-gradient my-3">$META Token Contract</h2>
-                <div class="input-group mb-3">
-                    <input id="copyText1" type="text" class="form-control token-input" value="0x2B1fF4B51d15dE191f77c4d29a4328b7d9451772">
+                <div class="copy-box">
+                    <p id="copyText1">
+                      0x2B1fF4B51d15dE191f77c4d29a4328b7d9451772
+                    </p>
+                 
                     <div class="input-group-append">
-                        <button class="btn btn-primary  btn-theme" type="submit" onclick="copy();">Copy</button>
+                        <button class="btn btn-primary  btn-theme"  onclick="copyToClipboard('#copyText1')">Copy</button>
                     </div>
                   </div>
 
@@ -608,6 +612,15 @@ The MetaSpace dating space is a large-scale immersive environment that provides 
   <script src="./scroll-out.js"></script>
   <script src="./js/controller.js"></script>
   <script>
+
+// copy 
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
 
   </script>
 </body>

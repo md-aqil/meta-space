@@ -14,7 +14,7 @@ body {
     z-index: 100;
 }
 .f-section {
-    margin-top: -10px;
+    margin-top: 80px;
 }
 .asfo {
     /* position: relative; */
@@ -86,23 +86,29 @@ border-radius: 8px;
 }
 
 .asfo {
-    background: url(../img/asfo.png);
+    /* background: url(../img/asfo.png); */
     width: 100%;
-    height: 340px;
+    /* height: 340px; */
     background-position-x: center;
     background-position-y: 50px;
     background-color: #ff000000;
     left: 0;
     /* top: 270px; */
-    bottom: -300px;
     z-index: 1;
     background-repeat: no-repeat;
     padding-top: 50px;
     background-size: cover;
+    position: relative;
   
 }
+.asfo-img {
+    position: absolute;
+        width: 100%;
+        margin: auto;
+        top: 60px;
+}
 .swiper-loop .swiper-slide img {
-    width: 170px;
+    width: 200px;
 }
 .swiper-loop {
     transform: rotate(-6deg);
@@ -145,7 +151,7 @@ margin-bottom: 50px;
     margin-top: -56px;
 }
 .f-section .card-title {
-    margin-top: -15px;
+    /* margin-top: -15px; */
 }
 
 .glass {
@@ -508,6 +514,28 @@ padding: 40px;
     top: 0;
 }
 
+#copyText1{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    margin: 0;
+    border-radius: 0px 0px 0px 0px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    margin-right: 8px;
+    background: none;
+    color: #cacaca;
+}
+.copy-box {
+    display: flex;
+}
 
   /* mobile css START herer =====================================*/
 @media (max-width: 767px) {
@@ -524,7 +552,7 @@ padding: 40px;
         margin-top: -40px !important;
     }
    .f-section {
-        margin-top: -10px;
+        margin-top: 70px;
 }
 .asfo > .title {
     top: 20px;
@@ -554,7 +582,7 @@ padding: 40px;
 }
 
 .asfo {
-    background: url(../img/asfo.png);
+    /* background: url(../img/asfo.png); */
     width: 100%;
    height: 340px;
     background-position-x: center;
