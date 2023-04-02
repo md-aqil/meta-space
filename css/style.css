@@ -227,7 +227,7 @@ border-radius: 8px;
     width: 540px;
     margin-left: -100px;
     position: relative;
-    z-index: 100;
+    z-index: 1;
   }
   .card-map {
  background: #26283d6b;

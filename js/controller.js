@@ -103,3 +103,11 @@ $(".swiper-loop").hover(function () {
   }, function () {
 	(this).swiper.autoplay.start();
   });
+
+  ScrollOut({
+	cssProps: {
+	  visibleY: true,
+	  viewportY: true
+	},
+  });
+  
