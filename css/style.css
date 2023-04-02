@@ -536,11 +536,23 @@ padding: 40px;
 .copy-box {
     display: flex;
 }
+.asfo-container {
+    position: relative;
+}
+.asfo-container::before {
+    content: "";
+    width: 100%;
+    height: 300px;
+    background: black;
+}
 
   /* mobile css START herer =====================================*/
 @media (max-width: 767px) {
     .big-pipe {
         width: 100%;
+    }
+    .asfo-img {
+        top: 146px;
     }
     .swiper-loop .swiper-slide img {
         width: 100px;
