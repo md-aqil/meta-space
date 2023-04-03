@@ -500,7 +500,7 @@ The MetaSpace dating space is a large-scale immersive environment that provides 
                     </p>
                  
                     <div class="input-group-append">
-                        <button class="btn btn-primary  btn-theme"  onclick="copyToClipboard('#copyText1')">Copy</button>
+                        <button class="btn btn-primary  btn-theme" id="copybtn"  onclick="copyToClipboard('#copyText1')">Copy</button>
                     </div>
                   </div>
 
@@ -619,6 +619,7 @@ function copyToClipboard(element) {
     $("body").append($temp);
     $temp.val($(element).text()).select();
     document.execCommand("copy");
+    $('#copybtn').text('copied')
     $temp.remove();
 }
 
